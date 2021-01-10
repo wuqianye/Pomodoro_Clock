@@ -5,13 +5,13 @@ import momentDurationFormatSetup from "moment-duration-format";
 
 momentDurationFormatSetup(moment);
 
-const TimeLeft = ({sessionLength}) => {
+const BreakTimeLeft = ({breakLength}) => {
     const [intervalID, setIntervalID] = useState(null);
-    const [timeLeft, setTimeLeft] = useState(sessionLength);
+    const [timeLeft, setTimeLeft] = useState(breakLength);
 
     useEffect(() => {
-        setTimeLeft(sessionLength);
-    }, [sessionLength]);
+        setTimeLeft(breakLength);
+    }, [breakLength]);
 
     const isStarted = intervalID != null;
     const handleStartStopClick = () => {
@@ -42,4 +42,4 @@ const TimeLeft = ({sessionLength}) => {
     );
 }
 
-export default TimeLeft;
+export default BreakTimeLeft;

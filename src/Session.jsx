@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import moment from "moment";
-import TimeLeft from "./TimeLeft";
+import SessionTimeLeft from "./SessionTimeLeft";
 
 const Session = () => {
     const [sessionLength, setSessionLength] = useState(25 * 60);
@@ -26,7 +26,7 @@ const Session = () => {
             <p>{sessionLengthInMinutes}</p>
             <button onClick={decrementSessionLength}>-</button>
             <button onClick={incrementSessionLength}>+</button>
-            <TimeLeft sessionLength={sessionLength}/>
+            <SessionTimeLeft sessionLength={sessionLength}/>
         </div>
     );
 }
