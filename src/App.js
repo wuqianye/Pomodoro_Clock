@@ -7,8 +7,10 @@ function App() {
     return (
         <div className="App">
             <h1>Pomodoro Clock</h1>
-            <Break />
-            <Session />
+            <div id="main">
+                <Break />
+                <Session />
+            </div>
         </div>
     );
 }

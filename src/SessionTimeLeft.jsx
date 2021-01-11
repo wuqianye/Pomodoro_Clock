@@ -36,8 +36,8 @@ const SessionTimeLeft = ({sessionLength}) => {
 
     return (
         <div>
-            <p>{formattedTimeLeft}</p>
-            <button onClick={handleStartStopClick}>{isStarted? "Stop" : "Start"}</button>
+            <p className="timer">{formattedTimeLeft}</p>
+            <button className="start" onClick={handleStartStopClick}>{isStarted? "Stop" : "Start"}</button>
         </div>
     );
 }
