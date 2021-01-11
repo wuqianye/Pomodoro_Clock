@@ -23,7 +23,6 @@ const Session = () => {
     return (
         <div id="session">
             <h2>Session</h2>
-            <p>{sessionLengthInMinutes}</p>
             <button className="control" onClick={decrementSessionLength}>-</button>
             <button className="control" onClick={incrementSessionLength}>+</button>
             <SessionTimeLeft sessionLength={sessionLength}/>

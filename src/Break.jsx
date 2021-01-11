@@ -23,7 +23,6 @@ const Break = () => {
     return (
         <div id="break">
             <h2>Break</h2>
-            <p>{breakLengthInMinutes}</p>
             <button className="control" onClick={decrementBreakLength}>-</button>
             <button className="control" onClick={incrementBreakLength}>+</button>
             <BreakTimeLeft breakLength={breakLength}/>
