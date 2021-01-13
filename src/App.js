@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import Break from "./Break";
-import Session from "./Session";
+import Break from "./components/Break";
+import Session from "./components/Session";
 
 function App() {
     return (
